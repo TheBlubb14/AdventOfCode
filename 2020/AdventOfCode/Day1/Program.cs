@@ -20,9 +20,9 @@ foreach (var item in expenses)
 
 foreach (var item in expenses)
 {
-    foreach (var item2 in expenses)
+    foreach (var item2 in expenses.Skip(1))
     {
-        foreach (var item3 in expenses)
+        foreach (var item3 in expenses.Skip(2))
         {
             if (item + item2 + item3 == search)
             {
